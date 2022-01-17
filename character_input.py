@@ -5,11 +5,12 @@
 import datetime as dt
 
 date = dt.date.today()
-year = date.year
+year = date.year # Make year an object
 
 try:
     name = input('Insert your name: ')
     age = int(input('Insert your age: '))
+    # Add +1 to age until it turns 100
     while age < 100:
         age += 1
         year += 1
