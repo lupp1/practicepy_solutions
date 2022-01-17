@@ -20,6 +20,3 @@ try:
 except ValueError as err:
     print(f'{err}: Insert an integer')
     quit()
-
-
-
