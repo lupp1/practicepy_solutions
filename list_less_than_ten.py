@@ -7,6 +7,10 @@
 # 5 from this list in it and print out this new list.
 # 2. Write this in one line of Python.
 
+# 1.
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 p = [n for n in a if n < 5]
 print(p)
+
+# 2.
+print([i for i in a if i < 5])
