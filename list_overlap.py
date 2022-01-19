@@ -9,13 +9,10 @@
 
 from random import randint, shuffle 
 
-m = []
-s = []
+m = [x for x in range(randint(0, 100))]
+s = [y for y in range(randint(0, 100))]
 
 def overlap() -> list:
-
-    [m.append(x) for x in range(0, randint(0, 100))]
-    [s.append(y) for y in range(0, randint(0, 100))]
 
     overlaps = list(set(s + m))
     shuffle(overlaps)
