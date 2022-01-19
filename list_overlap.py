@@ -12,7 +12,7 @@ from random import randint, shuffle
 m = []
 s = []
 
-def overlap() -> list
+def overlap() -> list:
 
     [m.append(x) for x in range(0, randint(0, 100))]
     [s.append(y) for y in range(0, randint(0, 100))]
