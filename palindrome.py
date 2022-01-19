@@ -5,4 +5,5 @@ string = input('Insert a word: ')
 
 def main():
     return 'Palindrome' if string[::-1] == string[::1] else 'Not a palindrome.'
+
 print(main())
