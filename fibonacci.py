@@ -4,10 +4,10 @@
 # numbers in the sequence to generate.
 
 def fibonacci(n):
-    f = [0, 1]
+    start = [0, 1]
     for i in range(n - 2):
-        f.append(f[-1] + f[-2])
-    return f
+        start.append(start[-1] + start[-2])
+    return start
 
 def user_input():
     return int(input('How many fibonacci numbers to generate? '))
