@@ -15,7 +15,6 @@ def main():
 
     for i in range(20):
         password.append(random.choice(characters))
-    
     return ''.join(password)
 
 if __name__ == "__main__":
