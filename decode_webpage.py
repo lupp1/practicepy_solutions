@@ -10,10 +10,11 @@ req_html = req.text
 soup = BeautifulSoup(req_html, 'html.parser')
 h3 = soup.find_all('h3') 
 
-def get_text():
+def main():
     text = ""
     for i in h3:
         text += i.text
     print(text)
 
-get_text()
+if __name__ == "__main__":
+    main()
