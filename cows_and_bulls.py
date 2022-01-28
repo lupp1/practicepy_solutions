@@ -1,3 +1,4 @@
+# Cows and Bulls www.practicepython.org/exercise/2014/07/05/18-cows-and-bulls.html 
 # Create a program that will play the “cows and bulls” game with the user. The game works like this:
 # Randomly generate a 4-digit number. Ask the user to guess a 4-digit number. 
 # For every digit that the user guessed correctly in the correct place, they have a “cow”. 
@@ -30,7 +31,6 @@ def main():
                 if guess == four_digits:
                     print('You guessed correctly!')
                     break
-
             print(f'You made {guesses} guesses', f'You have {sum(cows)} cows and {sum(bulls)} bulls', sep='\n')
 
         else:
