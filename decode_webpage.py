@@ -4,12 +4,6 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = "https://www.nytimes.com/"
-req = requests.get(url)
-req_html = req.text
-soup = BeautifulSoup(req_html, 'html.parser')
-h3 = soup.find_all('h3') 
-
 def main():
     text = ""
     for i in h3:
@@ -17,4 +11,11 @@ def main():
     print(text)
 
 if __name__ == "__main__":
+    
+    url = "https://www.nytimes.com/"
+    req = requests.get(url)
+    req_html = req.text
+    soup = BeautifulSoup(req_html, 'html.parser')
+    h3 = soup.find_all('h3') 
+    
     main()
