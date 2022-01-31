@@ -7,6 +7,8 @@
 
 import random
 from string import ascii_letters, digits, punctuation
+from time import sleep
+import pyperclip
 
 def main():
     random_char = ascii_letters + digits + punctuation
@@ -18,4 +20,11 @@ def main():
     return ''.join(password)
 
 if __name__ == "__main__":
-    print(f'Your new password is {main()}')
+    new_password = main()
+    pyperclip.copy(new_password)
+    print(f'Your new password is {new_password}')
+    sleep(5)
+
+
+i = 0
+
