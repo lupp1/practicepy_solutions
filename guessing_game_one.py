@@ -29,6 +29,7 @@ def guess():
         else:
             print('Exactly right.')
             print(f"Congratulations. You've taken {len(guesses)} guesses and they are \n{guesses}")
-            continue
+            guess()
                 
-guess()
+if __name__ == '__main__':
+    guess()

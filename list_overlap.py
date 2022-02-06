@@ -9,14 +9,14 @@
 
 from random import randint, shuffle 
 
-m = [x for x in range(randint(0, 100))]
-s = [y for y in range(randint(0, 100))]
-
 def overlap() -> list:
 
     overlaps = list(set(s + m))
     shuffle(overlaps)
 
-    return overlaps  
-
-print(overlap())
+    return overlaps
+    
+if __name__ == "__main__":
+    m = [x for x in range(randint(0, 100))]
+    s = [y for y in range(randint(0, 100))]
+    overlap()
