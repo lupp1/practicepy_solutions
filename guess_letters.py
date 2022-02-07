@@ -6,10 +6,11 @@
 # For this exercise, write the logic that asks a player to guess a letter and displays letters in the clue word that were guessed correctly. 
 # For now, let the player guess an infinite number of times until they get the entire word.
 
+import random
 from pick_word import pick_a_word
 
 
-def guess_letters():
+def main() -> str:
     word = pick_a_word()
     i = len(word)
     s = [' _ ' * i]
@@ -21,10 +22,14 @@ def guess_letters():
         user_guess = input('Guess your letter: ').upper()   
         for idx in range(len(word)):
             if word[idx] == user_guess:
-                # TODO: Fix removing/adding extra tiles
-                tile.insert(idx, word[idx])
-                tile.remove(tile[-1])
-                print(tile)
+                tile[idx] = user_guess
 
-guess_letters()
+        if user_guess not in word:
+            print('Incorrect!')
+            continue
+        print(' '.join(tile))
+
+if __name__ == "__main__":
+    main()
                     
+                 

@@ -7,9 +7,10 @@ def fibonacci(n):
     start = [0, 1]
     for i in range(n - 2):
         start.append(start[-1] + start[-2])
-    return start
+    return print(start)
 
 def user_input():
     return int(input('How many fibonacci numbers to generate? '))
 
-print(fibonacci(user_input()))
+if __name__ == "__main__":
+    fibonacci(user_input())

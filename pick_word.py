@@ -12,9 +12,4 @@ def pick_a_word() -> str:
     with open('sowpods.txt', 'r') as text:
         lines = text.readlines()
         lines = [_.strip('\n') for _ in lines]
-        return print(random.choice(lines))
-
-if __name__ == "__main__":
-    pick_a_word()
-else:
-    pick_a_word()
+        return random.choice(lines)
