@@ -21,7 +21,7 @@ def main() -> str:
         user_guess = input('Guess your letter: ').upper()   
         for idx in range(len(word)):
             if word[idx] == user_guess:
-                tile[idx] = user_guess
+                tiles[idx] = user_guess
         
         if user_guess == word or ''.join(tiles) == word:
             print('Congratulations, you guessed it right!')

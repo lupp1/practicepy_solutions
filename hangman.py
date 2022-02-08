@@ -15,6 +15,7 @@ def main() -> str:
     print(word)
     guesses = []
 
+    # TODO: When the player wins or loses, let them start a new game.
     while True:
         user_guess = input('Guess your letter: ').upper()   
         for idx in range(len(word)):
