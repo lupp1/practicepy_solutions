@@ -14,20 +14,23 @@ def main() -> str:
     word = pick_a_word()
     i = len(word)
     s = [' _ ' * i]
-    tile = s[0].split()
+    tiles = s[0].split()
     print(word)
-    guesses = []
 
     while True:
         user_guess = input('Guess your letter: ').upper()   
         for idx in range(len(word)):
             if word[idx] == user_guess:
                 tile[idx] = user_guess
+        
+        if user_guess == word or ''.join(tiles) == word:
+            print('Congratulations, you guessed it right!')
+            break
 
         if user_guess not in word:
             print('Incorrect!')
             continue
-        print(' '.join(tile))
+        print(' '.join(tiles))
 
 if __name__ == "__main__":
     main()
