@@ -17,7 +17,7 @@ def main():
                 appears.append(month)
     c = Counter(appears)
     c = json.dumps(c, indent=4)
-    print(c)
+    return print(c)
 
 if __name__ == "__main__":
     months = {
