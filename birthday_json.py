@@ -5,7 +5,6 @@
 
 import json
 
-
 birthday = {}
 
 with open("birthday.json", "r") as jfile:

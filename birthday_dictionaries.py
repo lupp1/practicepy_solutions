@@ -5,7 +5,6 @@
 # When you run your program it should ask the user to enter a name, and return the birthday of that person back to them. 
 
 def main():
-
     birth_dict = {"Albert Einstein": "03/14/1879", 
         "Ada Lovelace": "27/11/1852", 
         "Benjamin Franklin": "01/17/1706"}
