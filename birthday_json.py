@@ -15,7 +15,7 @@ def add_birthday():
     input_date = str(input("Tell me their birthday (format MM/DD/YY)\n"))
     birthday[_name] = input_date
     with open("birthday.json", "w") as jfile:
-        json.dump(birthday, jfile)
+        json.dump(birthday, jfile, indent=2)
     print("{0} was added to my birthdays list.".format(_name))    
 
 def search_birthday():
@@ -26,7 +26,10 @@ def search_birthday():
         print("This person isn't in my birthdays list.")
 
 def main():
-    op = ["1 - Search for birthdays", "2 - Add a birthday", "3 - Quit"]
+    op = ["1 - Search for birthdays", 
+          "2 - Add a birthday", 
+          "3 - Quit"]
+
     while True:
         for _ in op:
             print(_)
