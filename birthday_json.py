@@ -11,7 +11,6 @@ birthday = {}
 with open("birthday.json", "r") as jfile:
     birthday = json.load(jfile)
 
-
 def add_birthday():
     _name = str(input("Tell a name to add to the birthdays list\n")).title()
     input_date = str(input("Tell me their birthday (format MM/DD/YY)\n"))
